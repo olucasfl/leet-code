@@ -7,10 +7,6 @@ public class MajorityElement {
 
     //passo um for pegando um numero e outro verificando se tem iguais a ele
     //se tiver igual eu guardo a quantidade
-
-
-    //PRIMEIRO ACHAR O NÚMERO QUE MAIS APARECE
-    //DEPOIS VERIFICAR QUANTIDADE DE VEZES QUE ELE APARECE SE É MAIOR QUE N/2
     public int majorityElement(int[] nums) {
         int quantityMemory = 1;
         int number = nums[0];
@@ -40,8 +36,8 @@ public class MajorityElement {
     public static void main(String[] args) {
         MajorityElement sol = new MajorityElement();
 
-        System.out.println(sol.majorityElement(new int[]{3, 2, 3}));             // esperado: 3
-        System.out.println(sol.majorityElement(new int[]{2, 2, 1, 1, 1, 2, 2})); // esperado: 2
-        System.out.println(sol.majorityElement(new int[]{1, 1, 2, 2}));          // esperado: -1 (empate, ninguém passa de n/2)
+        System.out.println(sol.majorityElement(new int[]{3, 2, 3}));
+        System.out.println(sol.majorityElement(new int[]{2, 2, 1, 1, 1, 2, 2}));
+        System.out.println(sol.majorityElement(new int[]{1, 1, 2, 2}));
     }
 }
